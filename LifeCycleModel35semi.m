@@ -81,7 +81,7 @@ simoptions.refine_d=vfoptions.refine_d;
 
 %% Parameters
 
-p5=5; % model period, in years
+p5=5; % model period, in years (just used this to modify some parameters from annual to model period)
 
 % Housing
 Params.f_htc=0; % transaction cost of buying/selling house (is a percent of h+prime)
