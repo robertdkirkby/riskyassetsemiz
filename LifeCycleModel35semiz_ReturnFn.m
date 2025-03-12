@@ -97,28 +97,6 @@ if agej>=Jr && savings<0
     F=-Inf;
 end
 
-%% Do something stupid
-if agej<10
-    if hprime==0
-        F=10;
-    else
-        F=-Inf;
-    end
-elseif agej<20
-    if hprime==1
-        F=10;
-    else
-        F=-Inf;
-    end
-else
-    if hprime==2
-        F=10;
-    else
-        F=-Inf;
-    end
-end
-
-
 %% buyhouse must match hprime and h
 if hprime==0
     if ~(buyhouse==0) % must be: don't own a house

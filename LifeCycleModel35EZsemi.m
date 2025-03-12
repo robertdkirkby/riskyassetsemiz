@@ -58,11 +58,11 @@ simoptions.riskyasset=1;
 % When there is more than one endogenous state, the riskyasset is the last one
 
 
-% % Specify Epstein-Zin preferences
-% vfoptions.exoticpreferences='EpsteinZin';
-% vfoptions.EZpositiveutility=0; % Epstein-Zin preferences in utility-units have to be handled differently depending on whether the utility funciton is positive or negative valued (this is all done internally, you just need to use vfoptions to specify which)
-% vfoptions.EZriskaversion='phi'; % additional risk-aversion
-% % Params.phi is set below
+% Specify Epstein-Zin preferences
+vfoptions.exoticpreferences='EpsteinZin';
+vfoptions.EZpositiveutility=0; % Epstein-Zin preferences in utility-units have to be handled differently depending on whether the utility funciton is positive or negative valued (this is all done internally, you just need to use vfoptions to specify which)
+vfoptions.EZriskaversion='phi'; % additional risk-aversion
+% Params.phi is set below
 
 %% To speed up the use of riskyasset we use 'refine_d', which requires us to set the decision variables in a specific order
 % NOTE: semiz adds an n_d4, which are in ReturnFn but not in aprimeFn, and which determine semi-exogenous transitions
